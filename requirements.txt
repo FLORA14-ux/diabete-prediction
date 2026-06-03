@@ -1,0 +1,5 @@
+# Ce fichier indique au serveur Cloud les bibliothèques Python à installer
+streamlit
+pandas
+scikit-learn
+numpy
