@@ -1,10 +1,9 @@
-import numpy as np  # Correction : 'numpy' au lieu de 'numepy'
+import numpy as np 
 import pandas as pd 
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn import svm  # Correction : 'svm' au lieu de 'swm'
-from sklearn.metrics import accuracy_score  # Correction : 'metrics' au lieu de 'model_selection'
-
+from sklearn import svm  
+from sklearn.metrics import accuracy_score  
 # 1. Chargement du jeu de données
 # Assure-toi que le fichier 'diabetes.csv' est bien téléchargé dans le même dossier !
 diabetes_data = pd.read_csv('diabetes.csv')
