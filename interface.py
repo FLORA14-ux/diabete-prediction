@@ -40,7 +40,6 @@ def charger_coeur():
     df = pd.read_csv('heart.csv')
     X = df.drop(columns='target')
     Y = df['target']
-    # La régression logistique fonctionne mieux sans StandardScaler ici selon ton tuto
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=2)
     model = LogisticRegression(max_iter=1000)
     model.fit(X_train, Y_train)
